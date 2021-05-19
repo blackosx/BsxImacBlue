@@ -12,18 +12,27 @@ A set of PNG files wrapped in Apple .icns file format suitable for using as a th
 Please refer to [OpenCore beauty treatment](https://dortania.github.io/OpenCore-Post-Install/cosmetic/gui.html#setting-up-opencore-s-gui) at dortania.
 
 **Compatible with OpenCore Version**<br>
-0.6.8
+0.7.0<br>
+*Note: Since OpenCore 0.7.0, the EFI/OC/Resources/Image/ directory will contain a Vendor directory which in turn will contain subsequent theme dirs.*
+
 
 **Using this theme**<br>
-The Resources directory from this repo contains just the Image dir for the EFI/OC/Resources/Image dir you will have setup for OpenCanopy (if not, see the above setup link.)
+This repository contains a Blackosx directory with a sub-directory BsxImacBlue_ which contains all necessary ICNS files for the theme.
 
-Each .icns file here begins with 'BsxImacBlue_'. The idea here is you can move the contents of this Image directory in to your existing OC/Resources/Image/ directory so these new files sit along side your existing theme files. 
+If you don't have a EFI/OC/Resources/Image/Blackosx directory in EFI/OC/Resources/Image/<br>
+- then add the Blackosx directory to EFI/OC/Resources/Image/ directory in your systems EFI System Partition.
 
-You can switch the icon set used by OpenCanopy by changing the 'PickerVariant' key in OpenCore's config.plist to match the preceding name of the icon set you want to display. So to instruct OpenCanopy to use this icon set you want to set the PickerVariant key to BsxImacBlue_
+If you already have EFI/OC/Resources/Image/Blackosx/<br>
+- then just add the BsxImacBlue_ directory
+
+Either way, for this theme you will want to end up having
+EFI/OC/Resources/Image/Blackosx/BsxImacBlue_
+
+You can switch the icon set used by OpenCanopy by changing the 'PickerVariant' key in OpenCore's config.plist to match the vendor and theme name of the icon set you want to display. So to instruct OpenCanopy to use this icon set you want to set the PickerVariant key to Blackosx\BsxImacBlue_
 
 ```
                 <key>PickerVariant</key>
-                <string>BsxImacBlue_</string>
+                <string>Blackosx\BsxImacBlue_</string>
 ```
 
 **Recommended Config changes**<br>
@@ -39,6 +48,3 @@ For the best experience using this theme you will want the text to display in wh
                     <key>DefaultBackgroundColor</key>
                     <data>AAAAAA==</data>
 ```
-
-**Credits**<br>
-The background used is a cropped version of Apple's desktop background image which will be copyright Apple Inc.
