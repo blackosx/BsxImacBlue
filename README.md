@@ -1,9 +1,9 @@
-# BsxImacBlue_
+# BsxImacBlue
 A set of PNG files wrapped in Apple .icns file format suitable for using as a theme for OpenCanopy which is part of OpenCore.
 
-<img src="https://github.com/blackosx/BsxImacBlue_/blob/main/preview_ui.jpg" alt="theme_preview" border="0">
+<img src="https://github.com/blackosx/BsxImacBlue/blob/main/preview_ui.jpg" alt="theme_preview" border="0">
 
-<img src="https://github.com/blackosx/BsxImacBlue_/blob/main/preview_password.jpg" alt="theme_preview" border="0">
+<img src="https://github.com/blackosx/BsxImacBlue/blob/main/preview_password.jpg" alt="theme_preview" border="0">
 
 **Requirements**<br>
 [OpenCore](https://github.com/acidanthera/OpenCorePkg) with OpenCanopy installed and configured.
@@ -17,22 +17,22 @@ Please refer to [OpenCore beauty treatment](https://dortania.github.io/OpenCore-
 
 
 **Using this theme**<br>
-This repository contains a Blackosx directory with a sub-directory BsxImacBlue_ which contains all necessary ICNS files for the theme.
+This repository contains a Blackosx directory with a sub-directory BsxImacBlue which contains all necessary ICNS files for the theme.
 
 If you don't have a EFI/OC/Resources/Image/Blackosx directory in EFI/OC/Resources/Image/<br>
 - then add the Blackosx directory to EFI/OC/Resources/Image/ directory in your systems EFI System Partition.
 
 If you already have EFI/OC/Resources/Image/Blackosx/<br>
-- then just add the BsxImacBlue_ directory
+- then just add the BsxImacBlue directory
 
 Either way, for this theme you will want to end up having
-EFI/OC/Resources/Image/Blackosx/BsxImacBlue_
+EFI/OC/Resources/Image/Blackosx/BsxImacBlue
 
-You can switch the icon set used by OpenCanopy by changing the 'PickerVariant' key in OpenCore's config.plist to match the vendor and theme name of the icon set you want to display. So to instruct OpenCanopy to use this icon set you want to set the PickerVariant key to Blackosx\BsxImacBlue_
+You can switch the icon set used by OpenCanopy by changing the 'PickerVariant' key in OpenCore's config.plist to match the vendor and theme name of the icon set you want to display. So to instruct OpenCanopy to use this icon set you want to set the PickerVariant key to Blackosx\BsxImacBlue
 
 ```
                 <key>PickerVariant</key>
-                <string>Blackosx\BsxImacBlue_</string>
+                <string>Blackosx\BsxImacBlue</string>
 ```
 
 **Recommended Config changes**<br>
